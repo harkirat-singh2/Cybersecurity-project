@@ -42,14 +42,14 @@ const Header3D = () => {
             <HashLink smooth to="/#home" className="flex items-center space-x-1 sm:space-x-2 md:space-x-3 focus:outline-none">
               <div className="relative flex-shrink-0">
                 <motion.img
-                  src="/22088259776.png"
+                  src="/Cybersecurity-project/22088259776.png"
                   alt="Cyvoria Cybersecurity Logo"
                   className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain filter drop-shadow-[0_0_10px_rgba(0,255,255,0.5)]"
                   style={{ imageRendering: "pixelated" }}
                   animate={{ 
-                    filter: "drop-shadow(0 0 10px rgba(0,255,255,0.5)) drop-shadow(0 0 20px rgba(0,255,255,0.3))"
+                    filter: "drop-shadow(0 0 8px rgba(0,255,255,0.4))"
                   }}
-                  transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+                  transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
                 />
               </div>
               <div className="flex flex-col">
@@ -58,7 +58,7 @@ const Header3D = () => {
                   animate={{ 
                     backgroundPosition: ["0% 0%", "100% 0%", "0% 0%"]
                   }}
-                  transition={{ duration: 3, repeat: Infinity }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
                   style={{ backgroundSize: "200% 100%" }}
                 >
                   CYVORIA

@@ -7,18 +7,26 @@ export default defineConfig({
   base: '/Cybersecurity-project/',
   optimizeDeps: {
     exclude: ['lucide-react'],
+    include: ['three', '@react-three/fiber', '@react-three/drei']
   },
   build: {
-    sourcemap: false, // Disable source maps in production
+    sourcemap: false,
+    minify: 'esbuild',
     rollupOptions: {
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom', 'react-router-hash-link'],
           'three-vendor': ['three', '@react-three/fiber', '@react-three/drei'],
-          'lucide': ['lucide-react'],
-          'framer-motion': ['framer-motion'],
+          'animation': ['framer-motion'],
+          'icons': ['lucide-react'],
         },
       },
     },
+    chunkSizeWarningLimit: 1000,
   },
+  server: {
+    hmr: {
+      overlay: false
+    }
+  }
 });
