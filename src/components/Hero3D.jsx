@@ -173,7 +173,7 @@ const Hero3D = memo(() => {
             transition={{ duration: 0.3 }}
           >
             <img
-              src="/22088259776.png"
+              src="./22088259776.png"
               alt="Cyvoria Cybersecurity Logo"
               width="64"
               height="64"
