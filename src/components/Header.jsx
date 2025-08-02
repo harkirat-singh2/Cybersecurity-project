@@ -14,7 +14,7 @@ const Header = () => {
           <div className="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
             <div className="relative flex-shrink-0">
               <img
-                src="/Cybersecurity-project/22088259776.png"
+                src="./22088259776.png"
                 alt="Cyvoria Cybersecurity Logo"
                 className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain filter drop-shadow-sm"
                 style={{
